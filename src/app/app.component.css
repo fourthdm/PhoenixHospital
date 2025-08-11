@@ -1,52 +1,366 @@
-.aboutheadline {
-    font-size: 2.5em;
-    font-weight: 800;
-    color: #184799;
-    text-align: center;
-}
+    .nav-link {
+        color: #184799;
+        font-weight: 500;
+        font-size: large;
+    }
 
-.aboutcard {
-    background-color: #f6cb58;
-    margin-top: 5rem;
-    border: 2px solid #f9bfb8;
-}   
+    .nav-link:hover {
+        color: #fcb900;
+        font-weight: 700;
+        font-size: larger;
+    }
 
+    .navbar-nav {
+        padding-left: 20%;
+    }
 
-.cardservice {
-    height: 85%;
-    box-shadow: rgba(241, 128, 116, 255) 0px 1px 1px 0px, rgba(238, 56, 36, 0.32) 0px 2px 1px 0px;
-}
+    .carousel-caption {
+        text-align: end;
+    }
 
-.services {
-    font-size: 15px;
-    font-weight: bold;
-    color: #fcb900;
-    /* text-transform: uppercase; */
-}
+    .carousel-caption .btn {
+        background-color: #184799;
+        color: #fcb900;
+    }
 
-.headline {
-    color: #184799;
-    font-weight: bold;
-}
+    .book:hover {
+        transform: scale(1.2);
+    }
 
-#services {
-    background-color: #1847990b;
-    padding: 2%;
-}
+    .aboutheadline {
+        font-size: 2.5em;
+        font-weight: 800;
+        color: #184799;
+        text-align: center;
+    }
 
-.testimonialstext {
-    background-color: #184799;
-    color: white;
-    margin-left: -4%;
-    margin-top: 4%;
-    margin-bottom: 6%;
-}
+    .aboutcard {
+        background-color: #f6cb58;
+        margin-top: 5rem;
+        border: 2px solid #f9bfb8;
+    }
 
-.testimonialimage {
-    border-top-left-radius: 25%;
-    border: 5px solid #fcb900;
-}
+    .cardservice {
+        height: 85%;
+        box-shadow: rgba(241, 128, 116, 255) 0px 1px 1px 0px, rgba(238, 56, 36, 0.32) 0px 2px 1px 0px;
+    }
 
-.imagetestimonialsilder {
-    width: 20%;
-}
+    .cardservice:hover img {
+        transform: scale(1.2);
+    }
+
+    .cardservice:hover .cardservicetext {
+        opacity: 1;
+        transform: translateY(0px);
+        z-index: 1;
+    }
+
+    .cardservicetext {
+        position: absolute;
+        top: 0;
+        /* show on top */
+        left: 0;
+        height: 100%;
+        /* width: 100%; */
+        background: #184799;
+        color: white;
+        /* border: 2px solid #fcb900; */
+        font-size: 1em;
+        padding: 2%;
+        opacity: 0;
+        display: block;
+        text-align: center;
+        /* transform: translate(-80px, -100px); */
+        /* transform: translateX(-100%); */
+        /* hide above the card */
+        /* transition: opacity 0.3s ease, transform 0.3s ease; */
+    }
+
+    .service {
+        color: #184799;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .services {
+        font-size: 15px;
+        font-weight: bold;
+        color: #fcb900;
+        /* text-transform: uppercase; */
+    }
+
+    .headline {
+        color: #184799;
+        font-weight: bold;
+    }
+
+    #services {
+        background-color: #1847990b;
+        padding: 2%;
+    }
+
+    .testimonialstext {
+        background-color: #184799;
+        color: white;
+        margin-left: -4%;
+        margin-top: 4%;
+        margin-bottom: 6%;
+    }
+
+    .testimonialimage {
+        border-top-left-radius: 25%;
+        border: 5px solid #fcb900;
+    }
+
+    .imagetestimonialsilder {
+        width: 20%;
+    }
+
+    #Contact {
+        padding: 2%;
+    }
+
+    label {
+        font-weight: 600;
+        font-size: larger;
+    }
+
+    .divaddress {
+        background-color: #184799;
+        color: #fcb900;
+        font-size: 22px;
+        text-align: center;
+        font-weight: 600;
+        padding: 5px;
+        width: 40%;
+        border-radius: 25px;
+    }
+
+    .cardcontact {
+        background-image: url('/assets/testimonials.png');
+        background-color: #184799a2;
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        color: white;
+        border: 2px solid #f9bfb8;
+        border-bottom-right-radius: 30%;
+    }
+
+    footer {
+        background-image: url('/assets/footer_bg.jpg');
+        background-size: cover;
+        /* background-color: rgba(243, 183,23, 0.5); */
+        background-color: rgba(24, 71, 153, 0.5);
+        /* Blue tint with 50% opacity */
+        background-blend-mode: screen;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    footer li {
+        list-style: none;
+        color: white;
+        text-align: start;
+        font-size: 16px;
+    }
+
+    footer li:hover {
+        color: #fcb900;
+        font-size: large;
+        font-weight: 700;
+    }
+
+    i {
+        color: #fcb900;
+    }
+
+    .icons {
+        color: white;
+        margin: 0 10px;
+        transition: transform 0.3s ease;
+    }
+
+    .icons:hover {
+        transform: scale(1.2);
+        color: #fcb900;
+    }
+
+    .fa-whatsapp {
+        color: #21da46;
+        bottom: 10%;
+        position: fixed;
+        right: 0;
+        z-index: 2;
+        background-attachment: fixed;
+    }
+
+    .displaymobile {
+        display: none;
+    }
+
+    .displaylaptop {
+        display: block !important;
+    }
+
+    @media(min-width:439px) and (max-width: 767px) {
+
+        .displaymobile {
+            display: block !important;
+        }
+
+        .displaylaptop {
+            display: none !important;
+        }
+    }
+
+    .topBtn {
+        bottom: 3%;
+        position: fixed;
+        right: 0;
+        z-index: 2;
+    }
+
+    #Amenities {
+        background-color: #f5c133;
+        padding: 2%;
+    }
+
+    .container-diagnostics {
+        position: relative;
+        background: rgb(204, 204, 204);
+        height: 80%;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .container-diagnostics:hover .container-diagnostics-title {
+        display: none;
+    }
+
+    .container-diagnostics-title {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        font-weight: 500;
+        box-sizing: border-box;
+        padding: 10px 25px;
+        background: rgba(35, 73, 131, 0.5);
+    }
+
+    .container-diagnostics:hover .overlay {
+        opacity: 1;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        color: rgb(255, 255, 255);
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        display: inline-grid;
+        font-size: 16px;
+        background: rgba(35, 73, 131, 0.7);
+        transition: opacity 0.3s;
+        padding: 30px;
+    }
+
+    .overlay .diagnostics-title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #fcb900;
+    }
+
+    .cardvision {
+        background-color: #fcb900;
+        color: #184799;
+        border: none;
+        border-radius: 0%;
+    }
+
+    .card-header {
+        background-color: none;
+    }
+
+    .mission-image {
+        width: auto;
+        height: auto;
+        margin-top: -10%;
+    }
+
+    .vision-image {
+        width: auto;
+        height: auto;
+        margin-top: -10%;
+    }
+
+    .mission-image:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .vision-image:hover {
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+    .vision {
+        font-size: 1.5em;
+        font-weight: 700;
+        color: #184799;
+        text-align: center;
+    }
+
+    .abouttext {
+        font-size: 1.2em;
+        /* color: #184799; */
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .abouthead {
+        color: #184799;
+        font-weight: 700;
+        font-size: 1.5em;
+    }
+
+    #appoinment {
+        background: linear-gradient(to right, #fcb900, #184799);
+        color: white;
+        padding: 2%;
+    }
+
+    .btn-warning:hover {
+        transform: scale(1.1);
+        background-color: #fcb900 !important;
+        color: #184799 !important;
+        font-weight: 700;
+    }
+
+    #homeText {
+        background-color: #184799ec;
+        font-size: 1.2em;
+        color: white;
+        text-align: center;
+        padding: 2%;
+    }
+
+    .homeimage {
+        width: 100%;
+        margin-top: -1%;
+    }
+
+    menu {
+        padding: 0%;
+    }
